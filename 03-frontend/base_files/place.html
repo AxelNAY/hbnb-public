@@ -7,8 +7,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <a href="index.html">
+            <img src="logo.png" alt="HBnB Logo" class="logo"></img>
+        </a>
+        <button href="login.html" class="login-button">Login</button>
+        <nav class="nav-link">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html" id="login-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <section id="place-details">
+        <section class="place-details">
+            <!-- Place details will be populated dynamically -->
+        </section>
+        <section class="place-image-large">
             <!-- Place details will be populated dynamically -->
         </section>
         <section id="reviews">
@@ -24,6 +39,9 @@
             </form>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 HBnB Evolution. All rights reserved.</p>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>

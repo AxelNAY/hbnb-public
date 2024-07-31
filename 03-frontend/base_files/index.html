@@ -8,21 +8,53 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="login.html" id="login-link">Login</a>
+        <a href="index.html">
+            <img src="logo.png" alt="HBnB Logo" class="logo"></img>
+        </a>
+        <button href="login.html" class="login-button">Login</button>
+        <nav class="nav-link">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html" id="login-link">Login</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <section id="filter">
             <label for="country-filter">Filter by Country:</label>
             <select id="country-filter">
-                <!-- Options will be populated dynamically -->
+                <option value="all">All</option>
             </select>
         </section>
         <section id="places-list">
-            <!-- List of places will be populated dynamically -->
+            <ul class="place-card">
+                <li>
+                    <img src="icon_bath.png" class="place-image">
+                    <h1>Beautifull Beach House</h1>
+                    <h2>Price per night: 150$</h2>
+                    <h2>Location: Los Angeles, United States</h2>
+                    <button class="details-button">View Details</button>
+                </li>
+                <li>
+                    <img src="icon_bed.png" class="place-image">
+                    <h1>Cozy Cabin</h1>
+                    <h2>Price per night: 100$</h2>
+                    <h2>Location: Toronto, Canada</h2>
+                    <button class="details-button">View Details</button>
+                </li>
+                <li>
+                    <img src="icon_wifi.png" class="place-image">
+                    <h1>Modern Apartment</h1>
+                    <h2>Price per night: 200$</h2>
+                    <h2>Location: New York, United States</h2>
+                    <button class="details-button">View Details</button>
+                </li>
+            </ul>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 HBnB Evolution. All rights reserved.</p>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>
